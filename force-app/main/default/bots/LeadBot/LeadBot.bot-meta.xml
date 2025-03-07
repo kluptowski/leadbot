@@ -175,7 +175,7 @@
         <label>Routable Id</label>
     </contextVariables>
     <description>If you interact with a potential sales lead, bring it here.</description>
-    <label>LeadBot</label>
+    <label>LeadBot Agent</label>
     <logPrivateConversationData>false</logPrivateConversationData>
     <richContentEnabled>true</richContentEnabled>
     <sessionTimeout>0</sessionTimeout>
