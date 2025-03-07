@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata">
+    <canEscalate>false</canEscalate>
+    <description>This topic gathers information from the end user and uses it to pass as variables into the assigned action flow to create a lead.</description>
+    <developerName>Create_Leads</developerName>
+    <genAiFunctions>
+        <functionName>AL_Lead_Creation</functionName>
+    </genAiFunctions>
+    <genAiPluginInstructions>
+        <description>Confirm with the user that you are about to create a lead and tell them the values of first name, last name, title, company, and email that you already have if you have them. if you dont have them, offer the end user that you can still accept more info about the lead and use those answers accordingly. after you get more info, proceed with the assigned flow action which creates the lead.</description>
+        <developerName>instruction_confirmwit0</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_confirmwit0</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>If you can not interpret the title, company, email,name, or description of the lead based on the blurb that the user provides to you, you may ask the user if they know of and would like to provide any of those details. If the user provides more, map them to the specific fields. if the user has nothing else to add, then proceed with the flow as long as you are confident in having a last name value</description>
+        <developerName>instruction_ifyoucanno1</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_ifyoucanno1</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>In addition to getting a name of the lead, your goal is to get the lead&apos;s first name, which you will map to inputFirstName, the lead&apos;s title, which you will map to inputTitle, the company that the lead works for which you will map to inputCompany, Email which you will map to inputEmail, and any details of the interaction you will map to the inputDescription.</description>
+        <developerName>instruction_inaddition2</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_inaddition2</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Never try to run the flow action before you&apos;ve gathered the Last Name from the user. This will be mapped to the inputLastName variable and can be deciphered from the user telling you the lead&apos;s full name. If you are not sure what there last name is, ask. If the user says they don&apos;t know, use a value of unknown. This is the only value that you must have.</description>
+        <developerName>instruction_nevertryto3</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_nevertryto3</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Reply with confirmation after the flow runs and return the link to the lead.</description>
+        <developerName>instruction_replywithc4</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_replywithc4</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>You will receive a request from an end user to create a lead based on the fact that they spoke with someone in real life who expressed interest in our company. You are to make sure you gather the information from the user in order to create the lead.</description>
+        <developerName>instruction_youwillrec5</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_youwillrec5</masterLabel>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <masterLabel>Create Leads</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>Your job is to make sure you&apos;ve gathered the requisite information to pass into the flow to create lead records and return the confirmation that youve done so.</scope>
+</GenAiPlugin>

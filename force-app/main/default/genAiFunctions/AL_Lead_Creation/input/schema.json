@@ -1,0 +1,49 @@
+{
+  "required" : [ "inputLastName" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "inputCompany" : {
+      "title" : "inputCompany",
+      "description" : "company that the lead works for, as interpreted by agent and dictated by the end user",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : true
+    },
+    "inputDescription" : {
+      "title" : "inputDescription",
+      "description" : "Notes about the interaction. these will come from a description of the interaction or otherwise an explanation of what the lead was interested in, what they talked about, etc.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : true
+    },
+    "inputEmail" : {
+      "title" : "inputEmail",
+      "description" : "email address of the lead, as entered by the user",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : true
+    },
+    "inputFirstName" : {
+      "title" : "inputFirstName",
+      "description" : "first name of the lead, as interpreted by the agent and dictated by the user",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : true
+    },
+    "inputLastName" : {
+      "title" : "inputLastName",
+      "description" : "last name of the lead entered from agent conversation",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : true
+    },
+    "inputTitle" : {
+      "title" : "inputTitle",
+      "description" : "title of the lead, as interpreted from agent",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : true
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}
